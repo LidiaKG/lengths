@@ -1,0 +1,73 @@
+.tank {
+  position: relative;
+  border-radius: 0px 0px 20px 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  height: 300px;
+  width: 250px;
+  border: solid #0BBE92;
+  border-top-width: 0px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  background: lightblue;
+  
+}
+
+.liquid {
+  transition: height 3s;
+  position: absolute;
+  border-radius: 0px 0px 20px 20px;
+  left: 0px;
+  bottom: 0px;
+  height: 0%;
+  width: 100%;
+  background: red;
+}
+
+ .line1{
+width: 45px;
+height: 47px;
+border-bottom: 2px solid white;
+position: absolute;
+bottom: 10%;
+margin-left: 20px;
+
+}
+
+.line2{
+width: 45px;
+height: 47px;
+border-bottom: 2px solid white;
+position: absolute;
+bottom: 30%;
+margin-left: 20px;
+}
+
+.line3{
+width: 45px;
+height: 47px;
+border-bottom: 2px solid white;
+position: absolute;
+bottom: 50%;
+margin-left: 20px;
+}
+
+.line4{
+width: 45px;
+height: 47px;
+border-bottom: 2px solid white;
+position: absolute;
+bottom: 70%;
+margin-left: 20px;
+}
+
+.line5{
+width: 45px;
+height: 47px;
+border-bottom: 2px solid white;
+position: absolute;
+bottom: 90%;
+margin-left: 20px;
+}

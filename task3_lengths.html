@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lenghts</title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" type = "text/css" href = "style.css" >
+</head>
+<body>
+	<center>
+		<p>The program convert cm lengths to litres and galons. And shows a visual representation of the input. </p>
+			<form style="margin-top:100px">
+				<input style="height:30px; width:150px; padding-left:10px;" placeholder="Type a width in cm" type="number" name="number" id="width" />
+				<input style="height:30px; width:150px; padding-left:10px;" placeholder="Type a height in cm" type="number" name="number" id="height" />
+				<input style="height:30px; width:150px; padding-left:10px;" placeholder="Type a depth in cm" type="number" name="number" id="depth" />
+				<input style="height:35px;" type="button" value="Convert to litres and gallons" id="button" onclick="calculation()"/>
+				<center><p id="litres"></p></center>
+				<center><p id="gallons"></p></center>
+			</form>
+						
+	
+			
+		<p> This tube contains 120 l. <br>
+		Red color is a representation of the input lengths.</p>
+
+	<center>
+		<form style="margin-top:20px margin-bottom:100px">
+			<div class="tank" style="margin-top:50px">
+  				<div class="liquid" ></div>
+  				<div class="line1"></div>
+  				<div class="line2"></div>
+  				<div class="line3"></div>
+  				<div class="line4"></div>
+  				<div class="line5"></div>
+			</div>
+		</form>
+	</center>
+	
+	
+	
+	
+	<script type = "text/javascript">
+
+		var totalVal = 120; 
+
+		function calculation() {
+
+			var width = document.getElementById("width").value;
+			var height = document.getElementById("height").value;
+			var depth = document.getElementById("depth").value;
+
+			// count litres
+			var litres = width * height * depth;
+ 
+			 	document.getElementById("litres").innerHTML = "This is " + litres + " litres.";
+ 
+			//count gallons
+			var gallons = litres * 0.219969;
+ 				document.getElementById("gallons").innerHTML = "This is " + gallons + " imperial gallons.";
+ 
+
+
+			//tank in percentage
+			var liquidPerc = (litres/totalVal)*100; 
+				if (liquidPerc > 100) {
+					liquidPerc = 100;
+				} 
+				liquid.style.height = liquidPerc + "%" ;
+			}
+
+			var liquid = document.querySelector('.liquid');
+				document.querySelector('#bfill').onclick= function() {
+  				liquid.style.height = '100%';
+				};
+
+				document.querySelector('#bempty').onclick= function() {
+  				liquid.style.height = '0%';
+		}
+	
+
+	</script> 
+
+</body>
+
+</html>
